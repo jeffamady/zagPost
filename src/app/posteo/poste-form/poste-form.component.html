@@ -1,0 +1,10 @@
+<h1>New Post</h1>
+<form (ngSubmit)="guardar()">
+    <label for="fecha"></label>
+    <input type="text" id="fecha" name="fecha" [(ngModel)]="posteo.fecha" required>
+
+    <label for="mensaje"></label>
+    <input type="text" id="mensaje" name="mensaje" [(ngModel)]="posteo.mensaje" required>
+
+    <button type="submit">Enviar</button>
+</form>
